@@ -1,0 +1,17 @@
+# Operating-system metadata
+Thumbs.db
+.DS_Store
+
+# Editor and temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Local diagnostics and browser artifacts
+*.log
+*.trace
+*.json.gz
+screenshots/
+traces/
+

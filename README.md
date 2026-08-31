@@ -1,12 +1,14 @@
 # Bilibili Evolved 自定义顶栏性能补丁
 
-这是一个面向 **Bilibili Evolved 2.11.3 自定义顶栏**的 Violentmonkey 用户脚本，用于缓解在消息、动态、追番、待看、收藏和历史等悬停卡片之间快速切换、滚动时出现的严重渲染卡顿。
+这是一个适用于 **Bilibili Evolved 自定义顶栏**的 Violentmonkey 用户脚本，用于缓解在消息、动态、追番、待看、收藏和历史等悬停卡片之间快速切换、滚动时出现的严重渲染卡顿。已测试成功使用的 Bilibili Evolved 版本为 **2.11.3**；其他版本尚未逐一验证。
+
+针对的原项目：[Bilibili Evolved](https://github.com/the1812/Bilibili-Evolved)（强大的哔哩哔哩增强脚本）。
 
 ## 安装
 
-1. 确保浏览器已安装 [Violentmonkey](https://violentmonkey.github.io/) 和 Bilibili Evolved，并启用了 Bilibili Evolved 的自定义顶栏。
-2. 打开[脚本原始文件](https://raw.githubusercontent.com/CRYS74L/bilibili-evolved-custom-navbar-performance-patch/main/Bilibili-Evolved-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B6%E6%A0%8F%E6%80%A7%E8%83%BD%E8%A1%A5%E4%B8%81.user.js)。
-3. 在 Violentmonkey 的安装页面确认安装，然后刷新 Bilibili 页面。
+1. 确保浏览器已安装 [Violentmonkey](https://violentmonkey.github.io/) 和[原项目 Bilibili Evolved](https://github.com/the1812/Bilibili-Evolved)，并启用了 Bilibili Evolved 的自定义顶栏。
+2. 直接点击[安装脚本](https://raw.githubusercontent.com/CRYS74L/bilibili-evolved-custom-navbar-performance-patch/main/Bilibili-Evolved-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B6%E6%A0%8F%E6%80%A7%E8%83%BD%E8%A1%A5%E4%B8%81.user.js)。该链接会由 Violentmonkey 直接接管并打开安装确认页，不需要先从发行版下载附件。
+3. 在 Violentmonkey 的安装确认页确认安装，然后刷新 Bilibili 页面。
 
 ## 问题原因
 
@@ -37,7 +39,8 @@ Bilibili Evolved 的自定义顶栏会给弹出卡片的全部后代元素设置
 
 ## 兼容范围
 
-- 已验证：Microsoft Edge、Violentmonkey、Bilibili Evolved 2.11.3。
+- 已验证成功使用的版本：Microsoft Edge、Violentmonkey、Bilibili Evolved 2.11.3。
+- 适用对象：Bilibili Evolved 的自定义顶栏悬停卡片；Bilibili Evolved 的其他版本尚未逐一验证。
 - 匹配页面：`t.bilibili.com`、`www.bilibili.com`、`space.bilibili.com`、`search.bilibili.com`。
 - Bilibili Evolved 后续若调整自定义顶栏 DOM 或样式，补丁可能需要同步更新。
 
@@ -47,5 +50,4 @@ Bilibili Evolved 的自定义顶栏会给弹出卡片的全部后代元素设置
 
 ## 许可证
 
-本仓库当前未附加开源许可证。除法律明确允许的情形外，保留所有权利。
-
+本项目采用 [MIT License](./LICENSE)。使用、修改、再发布或商用时，请保留版权声明和许可证文本。

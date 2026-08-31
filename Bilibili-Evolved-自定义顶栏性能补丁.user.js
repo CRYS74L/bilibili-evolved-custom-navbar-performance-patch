@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Bilibili Evolved 自定义顶栏性能补丁
 // @namespace    codex.local.bilibili-evolved.custom-navbar-performance
-// @version      1.3.0
+// @version      1.3.1
 // @description  避免自定义顶栏反复重算整个卡片子树，并仅渲染待看列表的视口附近卡片，同时保留原有视觉过渡和功能。
 // @author       Local patch
+// @license      MIT
 // @match        https://t.bilibili.com/*
 // @match        https://www.bilibili.com/*
 // @match        https://space.bilibili.com/*
